@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+* {
+ margin: 0;
+ padding: 0;
+}
+.logo {
+ width: 80px;
+ height: 70px;
+}
+.logo img {
+ object-fit: contain;
+ height: 65px;
+ margin-right: 20px;
+ padding-left: 0;
+ float: left;
+}
+.navbar {
+ width: 1200px;
+ height: 60px;
+ margin: auto;
+}
+.navbar_left {
+ width: 100%;
+ position: sticky;
+ display: flex;
+ top: 0;
+ z-index: 999;
+ justify-content: space-evenly;
+border-bottom: 0.1px solid lightgrey;
+ padding: 0;
+ background: white;
+}
+ul {
+ float: left;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+ul li {
+ list-style: none;
+ margin-left: 100px;
+ margin-top: 25px;
+ font-size: 17px;
+ font-weight: 900;
+}
+ul li a {
+ text-decoration: none;
+ text-transform: initial;
+ color: black;
+ font-family: Verdana;
+ transition: 0.2s ease-in-out;
+}
+ul li a:hover {
+ color: #d0b200;
+}
+main-section {
+ background-color: rgba(255, 255, 0, 0.423);
+ padding-top: 15px;
+ padding-bottom: 5px;
+ padding-left: 70px;
+ padding-right: 70px;
+}
+.main-section-heading {
+ color: rgb(15, 15, 41);
+ font-family: sans-serif;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ padding-left: 50px;
+ font-size: 28px;
+ font-weight: 700;
+}
+.row {
+ margin-bottom: 20px;
+ display: flex;
+}
+.row > * {
+ padding: 150px;
+ flex: 1;
+ background-color: white;
+ border: 1px solid rgba(160, 153, 170, 0.2);
+}
+.custom-button {
+ background-image: linear-gradient(#d0b200, #a58d00);
+width: 200px;
+ height: 45px;
+ border-width: 0;
+ border-radius: 8px;
+ margin-top: 80px;
+ margin-left: 600px;
+ margin-bottom: 90px;
+}
+.custom-button a {
+ text-decoration: none;
+ font-size: medium;
+ color: white;
+}
+</style>
+<head>
+ <title>FoodMunch</title>
+</head>
+<body>
+ <div class="navbar_left">
+ <div class="logo">
+ <img src="images/food-munch-img.png">
+ </div>
+ <div class="navbar_right">
+ <ul>
+ <li><a href="Home.html">HOME</a></li>
+ <li><a href="signin.php">SIGN IN</a></li>
+ <li><a href="login.php">LOGIN</a></li>
+ <li><a href="cart.html">CART</a></li>
+ </ul>
+</div>
+ </div>
+ <div class="main-section">
+ <h1 class="main-section-heading">Your Basket of Joy</h1>
+ <div class="container">
+ <div class="row">
+ <h2 style="padding-left: 600px;">Hey, it feels so empty!</h2>
+ </div>
+ </div>
+ <button class="custom-button"><a href="payment.html">Place Order</a></button>
+ </div>
+</body>
+</html>
