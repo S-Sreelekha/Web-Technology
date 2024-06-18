@@ -1,0 +1,125 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+.logo {
+ width: 80px;
+ height: 70px;
+}
+.logo img {
+ object-fit: contain;
+ height: 65px;
+ margin-right: 20px;
+ padding-left: 0;
+ float: left;
+}
+.navbar {
+ width: 1200px;
+ height: 60px;
+ margin: auto;
+}
+.navbar_left {
+ width: 100%;
+ position: sticky;
+ display: flex;
+ top: 0;
+ z-index: 999;
+justify-content: space-evenly;
+ border-bottom: 0.1px solid lightgrey;
+ padding: 0;
+ background: white;
+}
+ul {
+ float: left;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+ul li {
+ list-style: none;
+ margin-left: 100px;
+ margin-top: 25px;
+ font-size: 17px;
+ font-weight: 900;
+}
+ul li a {
+ text-decoration: none;
+ text-transform: initial;
+ color: black;
+ font-family: Verdana;
+ transition: 0.2s ease-in-out;
+}
+ul li a:hover {
+ color: #d0b200;
+}
+.row {
+ margin-bottom: 20px;
+ display: flex;
+}
+.row > * {
+ padding: 15px;
+ flex: 1;
+ background-color: white;
+ border: 1px solid rgba(160, 153, 170, 0.2);
+}
+.menu-section {
+ background-color: #f9fbfe;
+ padding-top: 15px;
+ padding-bottom: 5px;
+ padding-left: 70px;
+ padding-right: 80px;
+}
+.menu-section-heading {
+ color: rgb(15, 15, 41);
+ font-family: sans-serif;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ padding-left: 50px;
+ font-size: 28px;
+ font-weight: 700;
+}
+.shadow {
+width: 5px;
+ height: 270px;
+}
+.menu-item-image {
+ border-radius: 17px; 
+ width: 220px;
+ height: 220px;
+}
+.menu-item-card {
+ border-radius: 16px;
+ margin-left: 40px;
+ margin-right: 55px;
+ padding-bottom: 170px;
+}
+.menu-card-title {
+ color: #1f2931;
+ text-align: center;
+ font-family: sans-serif;
+ font-size: 18px;
+ font-weight: 700;
+ margin-top: 10px;
+}
+.menu-card-description {
+ color: #1f2931;
+ text-align: left;
+ font-family: sans-serif;
+ font-size: 17px;
+ font-weight: 500;
+margin-top: 10px;
+ padding-bottom: 15px;
+}
+.custom-button {
+ background-image: linear-gradient(#eecd0c, #c8ac0f);
+ position: sticky;
+ width: 50px;
+ height: 38px;
+ border-radius: 8px;
+ text-decoration: none;
+ font-size: 14px;
+ font-weight: 600;
+ color: white;
+ cursor: pointer;
+ margin-bottom: 20px;
+}
