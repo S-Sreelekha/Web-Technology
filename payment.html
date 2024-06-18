@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+*{
+ font-family: 'Poppins', sans-serif;
+ margin:0; padding:0;
+ box-sizing: border-box;
+ outline: none; border:none;
+ text-transform: capitalize;
+ transition: all .2s linear;
+}
+.container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding:25px;
+min-height: 100vh;
+ background: rgba(255, 255, 0, 0.423);
+}
+.container form{
+ padding:20px;
+ width:700px;
+ background: white;
+ box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+.container form .row{
+ display: flex;
+ flex-wrap: wrap;
+ gap:15px;
+}
+.container form .row .col{
+ flex:1 1 250px;
+}
+.container form .row .col .title{
+ font-size: 20px;
+ color:#333;
+ padding-bottom: 5px;
+ text-transform: uppercase;
+}
+.container form .row .col .inputBox{
+ margin:15px 0;
+}
+.container form .row .col .inputBox span{
+ margin-bottom: 10px;
+ display: block;
+}
+.container form .row .col .inputBox input{
+ width: 100%;
+ border:1px solid #ccc;
+ padding:10px 15px;
+ font-size: 15px;
+ text-transform: none;
+}
+.container form .row .col .inputBox input:focus{
+ border:1px solid #000;
+}
+.container form .row .col .flex{
+ display: flex;
+ gap:15px;
+}
+.container form .row .col .flex .inputBox{
+ margin-top: 5px;
+}
+.container form .row .col .inputBox img{
+ height: 34px;
+ margin-top: 5px;
+ filter: drop-shadow(0 0 1px #000);
+}
+.container form .submit-btn{
+ width: 100%;
+ padding:12px;
+ font-size: 17px;
+ background: rgba(255, 255, 0, 0.536);
+ color: rgb(101, 89, 2);
+ margin-top: 5px;
+ cursor: pointer;
+}
+.container form .submit-btn:hover{
+ background: rgb(220, 193, 20);
+ color:#fff;
+}
+</style>
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="bg-container">
+ <div class="container">
+ <form action="">
+ <div class="row">
+ <div class="col">
+ <h3 class="title">Billing address</h3>
+ <div class="inputBox">
+ <span>Full name :</span>
+ <input type="text" placeholder="Enter your name">
+ </div>
+ <div class="inputBox">
+<span>Email :</span>
+ <input type="email" placeholder="Enter your email">
+ </div>
+ <div class="inputBox">
+ <span>Address :</span>
+ <input type="text" placeholder="Enter your address">
+ </div>
+ <div class="inputBox">
+ <span>City :</span>
+ <input type="text" placeholder="Enter your city">
+ </div>
+ <div class="flex">
+ <div class="inputBox">
+ <span>State :</span>
+ <input type="text" placeholder="Enter your state">
+ </div>
+ <div class="inputBox">
+ <span>Zip code :</span>
+ <input type="text" placeholder="Enter your zip code">
+ </div>
+ </div>
+ </div>
+ <div class="col">
+ <h3 class="title">Payment</h3>
+ <div class="inputBox">
+ <span>Cards accepted :</span>
+ <img src="https://www.pngitem.com/pimgs/m/1-18154_credit-cards-accepted-logohd-png-download.png" alt="">
+ </div>
+ <div class="inputBox">
+ <span>Name on card :</span>
+ <input type="text" placeholder="Enter name">
+</div>
+ <div class="inputBox">
+ <span>Credit card number :</span>
+ <input type="number" placeholder="Enter number">
+ </div>
+ <div class="inputBox">
+ <span>Exp month :</span>
+ <input type="text" placeholder="Enter month">
+ </div>
+ <div class="flex">
+ <div class="inputBox">
+ <span>Exp year :</span>
+ <input type="number" placeholder="Enter year">
+ </div>
+ <div class="inputBox">
+ <span>CVV :</span>
+ <input type="text" placeholder="Enter number">
+ </div>
+ </div>
+ </div>
+ </div>
+ <input type="submit" value="Proceed to Checkout" class="submit-btn">
+ </form>
+ </div> 
+</div>
+</body>
+</html>
